@@ -6,7 +6,7 @@ multiplication, and division:
 > countdown1 :: Int -> [Int] -> EV
 > countdown1 n = nearest n . concatMap mkExprs . subseqs
 
-> prop_acceptance = snd (countdown1 831 [1,3,7,10,25,50]) == 852
+> prop_acceptance = snd (countdown1 831 [1,3,7,10,25,50]) == 832
 
 
 Subseqs returns a list of all non-empty subsequences of a non-empty list.
